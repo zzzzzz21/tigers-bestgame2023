@@ -1,0 +1,247 @@
+// -------------------------------------------------
+//		Color palette
+// -------------------------------------------------
+$base_bg_color : #fede00;
+$base_font_color : #000;
+$base_accent_color : #cc0000;
+
+@mixin calcvw($value, $property: width, $base: 640) {
+  #{$property}: $value / $base * 100vw;
+}
+
+
+
+.c-sptv {
+  text-align: center;
+}
+
+.c-sptv-link {
+  display: inline-block;
+  }
+.m-sptvLink__title {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: calc(82 / 640 * 100vw);
+  background: url(../../../img/sp/special/tigers-bestgame2023/sptv1.png) no-repeat;
+  background-size: 100% auto;
+  position: relative;
+}
+
+
+#contents-inner {
+  width: 100%;
+  //  background: #fff;
+}
+
+#pkz {
+  background: $base_bg_color;
+  margin: 0;
+  padding: 16px 43px;
+}
+
+#pkz p {
+  color: $base_font_color;
+}
+
+#pkz p a {
+  color: inherit;
+}
+
+div#contWarp {
+  margin: 0 auto;
+//  width: 1200px;
+  background: transparent;
+}
+
+div#main {
+  padding: 0;
+}
+
+// -------------------------------------------------
+//		tigers-bestgame2023
+// -------------------------------------------------
+.l-main {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(0,212,255,0) 10%);
+}
+
+.l-pageHeader {
+  background: transparent;
+  background: $base_bg_color;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  @include calcvw(50,padding-bottom);
+}
+
+.c-pageHeader {
+  &__title {
+    display: block;
+    margin: 0 auto;
+    @include calcvw(560);
+    @include calcvw(64,padding-top);
+    img {
+      width: 100%;
+    }
+  }
+  &__lead {
+    font-weight: bold;
+    line-height: 1.6;
+    @include calcvw(24,font-size);
+    @include calcvw(40,margin-bottom);
+    @include calcvw(20,margin-top);
+  }
+  &__are {
+    position: absolute;
+    @include calcvw(102);
+    @include calcvw(24,left);
+    @include calcvw(30,top);
+    img {
+      width: 100%;
+    }
+  }
+  &__champion {
+    position: absolute;
+    @include calcvw(120);
+    @include calcvw(20,right);
+    @include calcvw(20,top);
+    img {
+      width: 100%;
+    }
+  }
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+  &__album {
+    display: flex;
+    flex-wrap: wrap;
+    &__photo {
+      width: 50%;
+    }
+  }
+  &__credit {
+    color: #666;
+    text-align: right;
+    @include calcvw(10,margin-top);
+    @include calcvw(10,margin-right);
+  }
+  &__text {
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    @include calcvw(60,font-size);
+    @include calcvw(30,margin-top);
+    span {
+      display: block;
+      @include calcvw(18,font-size);
+    }
+  }
+}
+
+.l-pageMain {
+//  padding: 0 20px;
+}
+
+.c-pageMain {
+  &__section {
+    background: #fff;
+    .l-pageMain &:nth-child(n+2) {
+      margin-top: 80px;
+    }
+    &__title {
+      background: $base_accent_color;
+      color: #fff;
+      @include calcvw(30,font-size);
+      @include calcvw(24,padding-left);
+      @include calcvw(24,padding-right);
+      @include calcvw(24,padding-bottom);
+      @include calcvw(30,padding-top);
+    }
+    &__body {
+      font-weight: bold;
+      line-height: 2;
+      @include calcvw(26,font-size);
+      @include calcvw(24,padding-left);
+      @include calcvw(24,padding-right);
+      @include calcvw(20,padding-top);
+    }
+  }
+  &__present {
+    &__title {
+      @include calcvw(26,font-size);
+      text-align: center;
+    }
+    &__body {
+      @include calcvw(40,margin-top);
+      &.teaser {
+        display: flex;
+        justify-content: center
+      }
+    }
+  }
+  &__button {
+    @include calcvw(50,margin-top);
+  }
+}
+.l-pageFooter {
+  @include calcvw(40,padding);
+  @include calcvw(120,padding-bottom);
+}
+.m-button {
+  text-align: center;
+  a {
+    box-sizing: border-box;
+    font-weight: bold;
+    display: inline-block;
+    background: #333;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    @include calcvw(40,font-size);
+    @include calcvw(32,padding-bottom);
+    @include calcvw(40,padding-left);
+    @include calcvw(40,padding-top);
+    @include calcvw(440,width);
+    &::before, &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transition: left ease .3s;
+    }
+    &::before {
+      background: #ffca00;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      left: 18px; 
+    }
+    &::after {
+      width: 12px;
+      height: 12px;
+      border: 0px;
+      border-top: solid 3px #000;
+      border-right: solid 3px #000;
+      transform: rotate(45deg);
+      left: 26px; 
+    }
+    &:hover {
+      opacity: .8; 
+    }
+    &:hover:before {
+      left: 24px; 
+    }
+    &:hover:after {
+      left: 32px; 
+    }
+  }
+}

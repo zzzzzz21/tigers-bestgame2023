@@ -1,0 +1,205 @@
+// -------------------------------------------------
+//		Color palette
+// -------------------------------------------------
+$base_bg_color : #fede00;
+$base_font_color : #000;
+$base_accent_color : #cc0000;
+
+
+
+.c-sptv {
+  text-align: center;
+}
+
+.c-sptv-link {
+  display: inline-block;
+}
+
+#contents-inner {
+  width: 100%;
+//  background: #fff;
+  background: $base_bg_color;
+}
+
+#pkz {
+  background: $base_bg_color;
+  margin: 0;
+  padding: 16px 43px;
+}
+
+#pkz p {
+  color: $base_font_color;
+}
+
+#pkz p a {
+  color: inherit;
+}
+
+div#contWarp {
+  background: transparent;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+div#main {
+  padding: 0;
+}
+
+// -------------------------------------------------
+//		tigers-bestgame2023
+// -------------------------------------------------
+.l-main {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(0,212,255,0) 10%);
+}
+
+.l-pageHeader {
+  background: transparent;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.c-pageHeader {
+  &__title {
+    display: block;
+    margin: 0 auto;
+    padding-top: 64px;
+    max-width: 750px;
+  }
+  &__lead {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0 40px;
+  }
+  &__are {
+    position: absolute;
+    left: 30px;
+    top: 26px;
+  }
+  &__champion {
+    position: absolute;
+    right: 30px;
+    top: 26px;
+  }
+  &__image {
+    margin: 0 20px;
+  }
+  &__album {
+    display: flex;
+  }
+  &__credit {
+    color: #666;
+    margin-top: 10px;
+    text-align: right;
+  }
+  &__text {
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    span {
+      display: block;
+      font-size: 18px;
+    }
+  }
+}
+
+.l-pageMain {
+  padding: 0 20px;
+}
+
+.c-pageMain {
+  &__section {
+    background: #fff;
+    border-radius: 10px;
+    .l-pageMain &:nth-child(n+2) {
+      margin-top: 80px;
+    }
+    &__title {
+      background: $base_accent_color;
+      color: #fff;
+      border-radius: 10px 10px 0 0;
+      font-size: 24px;
+      padding: 16px 20px 10px;
+    }
+    &__body {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 2;
+      padding: 20px 20px 40px;
+    }
+  }
+  &__present {
+    &__title {
+      font-size: 36px;
+      text-align: center;
+    }
+    &__body {
+      margin-top: 40px;
+      &.teaser {
+        display: flex;
+        justify-content: center
+      }
+    }
+  }
+  &__button {
+    margin-top: 50px;  
+  }
+}
+.l-pageFooter {
+  padding: 40px 0 120px;
+}
+.m-button {
+  text-align: center;
+  a {
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    background: #333;
+    border-radius: 6px;
+    padding: 20px 0px 15px 20px;
+    color: #fff;
+    text-align: center;
+    width: 320px;
+    position: relative;
+    &::before, &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transition: left ease .3s;
+    }
+    &::before {
+      background: #ffca00;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      left: 18px; 
+    }
+    &::after {
+      width: 12px;
+      height: 12px;
+      border: 0px;
+      border-top: solid 3px #000;
+      border-right: solid 3px #000;
+      transform: rotate(45deg);
+      left: 26px; 
+    }
+    &:hover {
+      opacity: .8; 
+    }
+    &:hover:before {
+      left: 24px; 
+    }
+    &:hover:after {
+      left: 32px; 
+    }
+  }
+}

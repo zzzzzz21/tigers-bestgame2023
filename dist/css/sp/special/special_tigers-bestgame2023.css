@@ -1,0 +1,219 @@
+.c-sptv {
+  text-align: center;
+}
+
+.c-sptv-link {
+  display: inline-block;
+}
+
+.m-sptvLink__title {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: 12.8125vw;
+  background: url(../../../img/sp/special/tigers-bestgame2023/sptv1.png) no-repeat;
+  background-size: 100% auto;
+  position: relative;
+}
+
+#contents-inner {
+  width: 100%;
+}
+
+#pkz {
+  background: #fede00;
+  margin: 0;
+  padding: 16px 43px;
+}
+
+#pkz p {
+  color: #000;
+}
+
+#pkz p a {
+  color: inherit;
+}
+
+div#contWarp {
+  margin: 0 auto;
+  background: transparent;
+}
+
+div#main {
+  padding: 0;
+}
+
+.l-main {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 2%, rgba(0, 212, 255, 0) 10%);
+}
+
+.l-pageHeader {
+  background: transparent;
+  background: #fede00;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 7.8125vw;
+}
+
+.c-pageHeader__title {
+  display: block;
+  margin: 0 auto;
+  width: 87.5vw;
+  padding-top: 10vw;
+}
+.c-pageHeader__title img {
+  width: 100%;
+}
+.c-pageHeader__lead {
+  font-weight: bold;
+  line-height: 1.6;
+  font-size: 3.75vw;
+  margin-bottom: 6.25vw;
+  margin-top: 3.125vw;
+}
+.c-pageHeader__are {
+  position: absolute;
+  width: 15.9375vw;
+  left: 3.75vw;
+  top: 4.6875vw;
+}
+.c-pageHeader__are img {
+  width: 100%;
+}
+.c-pageHeader__champion {
+  position: absolute;
+  width: 18.75vw;
+  right: 3.125vw;
+  top: 3.125vw;
+}
+.c-pageHeader__champion img {
+  width: 100%;
+}
+.c-pageHeader__image img {
+  width: 100%;
+}
+.c-pageHeader__album {
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-pageHeader__album__photo {
+  width: 50%;
+}
+.c-pageHeader__credit {
+  color: #666;
+  text-align: right;
+  margin-top: 1.5625vw;
+  margin-right: 1.5625vw;
+}
+.c-pageHeader__text {
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 9.375vw;
+  margin-top: 4.6875vw;
+}
+.c-pageHeader__text span {
+  display: block;
+  font-size: 2.8125vw;
+}
+
+.c-pageMain__section {
+  background: #fff;
+}
+.l-pageMain .c-pageMain__section:nth-child(n+2) {
+  margin-top: 80px;
+}
+.c-pageMain__section__title {
+  background: #cc0000;
+  color: #fff;
+  font-size: 4.6875vw;
+  padding-left: 3.75vw;
+  padding-right: 3.75vw;
+  padding-bottom: 3.75vw;
+  padding-top: 4.6875vw;
+}
+.c-pageMain__section__body {
+  font-weight: bold;
+  line-height: 2;
+  font-size: 4.0625vw;
+  padding-left: 3.75vw;
+  padding-right: 3.75vw;
+  padding-top: 3.125vw;
+}
+.c-pageMain__present__title {
+  font-size: 4.0625vw;
+  text-align: center;
+}
+.c-pageMain__present__body {
+  margin-top: 6.25vw;
+}
+.c-pageMain__present__body.teaser {
+  display: flex;
+  justify-content: center;
+}
+.c-pageMain__button {
+  margin-top: 7.8125vw;
+}
+
+.l-pageFooter {
+  padding: 6.25vw;
+  padding-bottom: 18.75vw;
+}
+
+.m-button {
+  text-align: center;
+}
+.m-button a {
+  box-sizing: border-box;
+  font-weight: bold;
+  display: inline-block;
+  background: #333;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 6.25vw;
+  padding-bottom: 5vw;
+  padding-left: 6.25vw;
+  padding-top: 6.25vw;
+  width: 68.75vw;
+}
+.m-button a::before, .m-button a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: left ease 0.3s;
+}
+.m-button a::before {
+  background: #ffca00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 18px;
+}
+.m-button a::after {
+  width: 12px;
+  height: 12px;
+  border: 0px;
+  border-top: solid 3px #000;
+  border-right: solid 3px #000;
+  transform: rotate(45deg);
+  left: 26px;
+}
+.m-button a:hover {
+  opacity: 0.8;
+}
+.m-button a:hover:before {
+  left: 24px;
+}
+.m-button a:hover:after {
+  left: 32px;
+}
