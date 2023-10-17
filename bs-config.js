@@ -2,7 +2,7 @@ module.exports = {
   files: ['dist/**/*.html', 'dist/**/*.css', 'dist/**/*.js'],
   open: 'external',
   external: true,
-  startPath: 'special/draft2023/',
+  startPath: 'special/tigers-bestgame2023/',
   watch: true,
   server: {
     baseDir: 'dist',

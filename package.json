@@ -1,5 +1,5 @@
 {
-  "name": "skya_itadakimeshi",
+  "name": "tigers-betgame2023",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,15 +25,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zzzzzz21/skya_itadakimeshi.git"
+    "url": "git+https://github.com/zzzzzz21/tigers-betgame2023.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zzzzzz21/skya_itadakimeshi/issues"
+    "url": "https://github.com/zzzzzz21/tigers-betgame2023/issues"
   },
-  "homepage": "https://github.com/zzzzzz21/skya_itadakimeshi#readme",
+  "homepage": "https://github.com/zzzzzz21/tigers-betgame2023#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@babel/cli": "^7.21.5",
